@@ -17,7 +17,10 @@ class ComportInstance {
   +send_com(config, power_byte, motor_byte, pwm_byte, time_int, delay) вероятно это отправка конфигурации
   +send_adc(config_byte, adc_int)
 }
+```
 
+```mermaid
+classDiagram
 class CommandMaster{
    + time_limited_motion(config, power_byte, motor_byte, pwm_byte, time_int, delay) просто переводит из вещественного времени в целое значение, где **проверка на 100?**
    + upper_comport ComportInstance верхний контроллер (троссы наверху пальца?)
@@ -36,8 +39,8 @@ class CommandMaster{
    + send_command_bytes( part, data) - отправка команд в байтовом представлении
    + release_upper_comport_after_thread() - закрывает и открывает ComportInstance (ЧЕЕЕ?)
 }
-
 ```
+
 | название | описание | допустимые значения | бит конфигурации | аналогия |
 | -- | -- | -- | -- | -- | -- |
 | config | Конфигурация | - | 0-5 бит поднимаются под команды ниже (где 0 - младший бит, справа налево), 1 - присутствует параметр в запросе, 0 - отсутствует, 6,7 - не задействованы | заполнение пакета битами, количество поднятых бит == количеству байт в пакете, кроме текущего байта |
