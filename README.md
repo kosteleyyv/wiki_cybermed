@@ -3,7 +3,7 @@
 ```mermaid
 classDiagram
 class ComportInstance {
-  +baudrate 
+  +baudrate int = 115200
   +bytesize
   +parity 
   +stopbits
