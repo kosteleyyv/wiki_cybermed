@@ -4,12 +4,12 @@
 classDiagram
 class ComportInstance
 {
-  +int baudrate = 115200
-  +bytesize = 8
-  +parity = 'N'
-  +stopbits = 1
-  +timeout = 2.0
-  +port = comport_name
+  +int baudrate 
+  +bytesize
+  +parity 
+  +stopbits
+  +timeout 
+  +port 
   +last_time
   +last_delay
   +open_comport() открывает и reset in-out-буферы
