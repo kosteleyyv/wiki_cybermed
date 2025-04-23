@@ -17,7 +17,7 @@ class ComportInstance {
   +send_com(config, power_byte, motor_byte, pwm_byte, time_int, delay) вероятно это отправка конфигурации
   +send_adc(config_byte, adc_int)
 }
-note right of ComportInstance
+note 
   Important information! You can write
    notes.
   end note
