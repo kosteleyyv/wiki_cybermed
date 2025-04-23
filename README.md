@@ -2,9 +2,8 @@
 
 ```mermaid
 classDiagram
-class ComportInstance
-{
-  +int baudrate 
+class ComportInstance {
+  +baudrate 
   +bytesize
   +parity 
   +stopbits
