@@ -3,7 +3,10 @@
 ```mermaid
 classDiagram
 
- note "This is a general note"
+        note right of ComportInstance
+            Important information! You can write
+            notes.
+        end note
 class ComportInstance {
   +baudrate int = 115200
   +bytesize = 8
