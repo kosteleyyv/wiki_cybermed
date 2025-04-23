@@ -2,11 +2,6 @@
 
 ```mermaid
 classDiagram
-
-        note right of ComportInstance
-            Important information! You can write
-            notes.
-        end note
 class ComportInstance {
   +baudrate int = 115200
   +bytesize = 8
@@ -22,7 +17,10 @@ class ComportInstance {
   +send_com(config, power_byte, motor_byte, pwm_byte, time_int, delay) вероятно это отправка конфигурации
   +send_adc(config_byte, adc_int)
 }
-
-
+note right of ComportInstance
+  Important information! You can write
+   notes.
+  end note
+end note
 ```
 
