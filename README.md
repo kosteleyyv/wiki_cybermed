@@ -92,12 +92,16 @@ class ManualControl{
 
 Формула линейного уравнения на данный момент:
 ```math
-x_max = 0.15
-x_min = 0.04
-y_max = 7
-y_min = 90
-y = (((y_min - y_max) * (x - x_max)) / (x_min - x_max)) + y0
+y = (((yMin - yMax) * (x - xMax)) / (xMin - xMax)) + y0
 ```
+$xMax = 0.15$
+
+$xMin = 0.04$
+
+$yMax = 7$
+
+$yMin = 90$
+
 где y - значение ШИМ, а x - (I) - сила тока?
 
 Почему y0 = 7 максимальный, а y1 = 90 минимальный? 
