@@ -112,26 +112,27 @@ $yMin = 90$
 
 
 Команда sendADC - какая структура пакета?
-20 байт
-'''
+* 20 байт
+```
 $y[k] = (x[i - 1] + x[i] * 256) * 3.3 / 4096
 i+=2, k++
 + ema_convertion
-'''
+```
 
-40 байт (both?)
-'''
+* 40 байт (both?)
+```
 $y[k] = x[i] * 3.3 / 4096
 i++, k++
 ema_convertion(data)
-'''
+```
 
-'''
+Обработка:
+```
 ema_convertion(data)
 alpha = 0.01
 alpha * data[i] + (1 - alpha) * result[-1]
 result - последнее значение. ФНЧ что-ли? 
-'''
+```
 
 
 
