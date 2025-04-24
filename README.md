@@ -59,7 +59,7 @@ class CommandMaster{
    + stop_command(config, motor_byte) наверно, останавливает - config='00000010'
    + power_command(part, config, power_byte) запуск на исполнение config='00000001', power_byte='00000001'
    + send_command_bytes( part, data) - отправка команд в байтовом представлении
-   + release_upper_comport_after_thread() - закрывает и открывает ComportInstance (ЧЕЕЕ?)
+   + release_upper_comport_after_thread() - закрывает и открывает ComportInstance (ЧТОО?ПОЧЕМУ?)
 }
 ```
 На основании указанного кода можно выделить следующие параметры команд.
