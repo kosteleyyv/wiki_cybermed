@@ -155,7 +155,7 @@ class ManualControl{
 
 Формула линейного уравнения на данный момент:
 ```math
-y = (((yMin - yMax) * (x - xMax)) / (xMin - xMax)) + y0
+y = (((yMin - yMax) * (x - xMax)) / (xMin - xMax)) + yMax
 ```
 $xMax = 0.15$
 
