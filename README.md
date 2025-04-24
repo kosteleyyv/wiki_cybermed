@@ -137,7 +137,7 @@ class CommandMaster{
 ```mermaid
 classDiagram
 class ManualControl{
-   + get_upper_opposite_pwm(low_pwm) = 7 - видно угол противоположной скорости вращения??? почему 7?
+   + get_upper_opposite_pwm(low_pwm) = 7 - видно противоположная скорость вращения? почему 7?
    + get_opposite_time_delay(original_time, original_delay) - original_time * 0.8, а original_delay * 1.1 - почему такие цифры???
    + opposite_pwm_from_adc(adc_data) расчет pwm по значению АЦП и линейного уравнения
 }
